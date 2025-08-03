@@ -1,0 +1,102 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "No hub",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "discord: m0nky.1030",
+   LoadingSubtitle = "로딩중...!",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"No_1"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local mainTab = Window:CreateTab("어드민", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "name less",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))() 
+   end,
+})
+
+local Button = mainTab:CreateButton({
+   Name = "infinity yield",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  end,
+})
+
+local mainTab = Window:CreateTab("모션핵", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "마히토(사이타마)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
+  end,
+})
+
+local mainTab = Window:CreateTab("아스널", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "ESP,오토에임",
+   Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Thunder-Client-For-Solara-13092"))()
+   end,
+})
+
+local mainTab = Window:CreateTab("프리즌라이프", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "어드민",
+   Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Prizz-Admin-14511"))()
+   end,
+})
+
+local mainTab = Window:CreateTab("스크 모음", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "아마도 씹사기 스크립트",
+   Callback = function()
+local p = {"htt", "ps:/", "/mys", "tb.in/raw/", "602188b0f97c80d665/", "1"}
+local url = table.concat(p)
+loadstring(game:HttpGet(url))()   
+   end,
+}) 
+
+local Button = mainTab:CreateButton({
+   Name = "내가 만든 ESp",
+   Callback = function()
+loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
+   end,
+}) 
+
