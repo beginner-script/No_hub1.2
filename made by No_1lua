@@ -100,3 +100,20 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
 }) 
 
+local Tab = Window:CreateTab("플레이어", 4483362458)
+local Section = Tab:CreateSection("이동 속도")
+
+Tab:CreateSlider({
+   Name = "속도",
+   Range = {16, 100}, -- 최소값 16(기본), 최대값 100
+   Increment = 1,
+   Suffix = "속도",
+   CurrentValue = 16,
+   Flag = "SpeedSlider",
+   Callback = function(Value)
+      local player = game.Players.LocalPlayer
+      local character = player.Character or player.CharacterAdded:Wait()
+      local humanoid = character:WaitForChild("Humanoid")
+      humanoid.WalkSpeed = Value
+   end,
+})
