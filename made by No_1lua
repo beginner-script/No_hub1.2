@@ -100,7 +100,7 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
 }) 
 
-ocal mainTab = Window:CreateTab("가강전", nil) -- title, Image
+local mainTab = Window:CreateTab("가강전", nil) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
