@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local mainTab = Window:CreateTab("어드민", nil) -- title, Image
+local mainTab = Window:CreateTab("어드민", 165699989) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
@@ -61,7 +61,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69
   end,
 })
 
-local mainTab = Window:CreateTab("아스널", nil) -- title, Image
+local mainTab = Window:CreateTab("아스널", 95723311874477) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
@@ -100,7 +100,7 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
 }) 
 
-local mainTab = Window:CreateTab("가강전", nil) -- title, Image
+local mainTab = Window:CreateTab("가강전", 122188029282264) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
