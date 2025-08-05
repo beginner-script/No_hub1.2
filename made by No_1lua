@@ -100,6 +100,16 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
 }) 
 
+ocal mainTab = Window:CreateTab("가강전", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "E누르면 공허(모바일 가능)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_voidscript1.0/refs/heads/main/Made.by.No_1"))()
+   end,
+}) 
+
 local Tab = Window:CreateTab("플레이어", 4483362458)
 local Section = Tab:CreateSection("이동 속도")
 
