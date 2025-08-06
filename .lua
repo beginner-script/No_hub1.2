@@ -174,3 +174,10 @@ Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/INF-jump/refs/heads/main/.lua"))()
    end,
 })
+
+Tab:CreateButton({
+   Name = "클릭 텔포트 (No_1)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/click-tp/refs/heads/main/.lua%20made%20by%20No_1"))()
+   end,
+})
