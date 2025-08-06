@@ -55,7 +55,7 @@ local mainTab = Window:CreateTab("모션핵", nil) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
-   Name = "마히토(사이타마)",
+   Name = "마히토(사이타마) (출처:모름) ",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
   end,
@@ -65,7 +65,7 @@ local mainTab = Window:CreateTab("아스널", 131569011870687) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
-   Name = "ESP,오토에임",
+   Name = "thunder hub",
    Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Thunder-Client-For-Solara-13092"))()
    end,
@@ -75,7 +75,7 @@ local mainTab = Window:CreateTab("프리즌라이프", nil) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
-   Name = "어드민",
+   Name = "어드민 (출처:모름) ",
    Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Prizz-Admin-14511"))()
    end,
@@ -94,7 +94,7 @@ loadstring(game:HttpGet(url))()
 }) 
 
 local Button = mainTab:CreateButton({
-   Name = "내가 만든 ESp",
+   Name = "ESP(No_1)",
    Callback = function()
 loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
@@ -104,7 +104,7 @@ local mainTab = Window:CreateTab("가강전", 122188029282264) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
 local Button = mainTab:CreateButton({
-   Name = "E누르면 공허(모바일 가능)",
+   Name = "버튼(E)누르면 공허(No_1)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_voidscript1.0/refs/heads/main/Made.by.No_1"))()
    end,
@@ -114,7 +114,7 @@ local Tab = Window:CreateTab("플레이어", 4483362458)
 local Section = Tab:CreateSection("이동 속도")
 
 Tab:CreateSlider({
-   Name = "속도",
+   Name = "속도 (No_1) ",
    Range = {16, 100},
    Increment = 1,
    Suffix = "속도",
@@ -129,7 +129,7 @@ Tab:CreateSlider({
 })
 
 Tab:CreateSlider({
-   Name = "점프파워",
+   Name = "점프파워 (No_1) ",
    Range = {50, 500}, 
    Increment = 10,
    Suffix = "점프력",
@@ -145,14 +145,14 @@ Tab:CreateSlider({
 })
 
 local Button = Tab:CreateButton({
-   Name = "노클립",
+   Name = "노클립 (No_1) ",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/noclip/refs/heads/main/README.md"))()
    end,
 }) 
 
 local Button = Tab:CreateButton({
-   Name = "anti afk",
+   Name = "anti afk (No_1)",
    Callback = function()
 local Players = game:GetService("Players")
 local lplr = Players.LocalPlayer
