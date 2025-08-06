@@ -129,7 +129,7 @@ Tab:CreateSlider({
 })
 
 local Button = mainTab:CreateButton({
-   Name = "노클",
+   Name = "노클립",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/noclip/refs/heads/main/README.md"))()
    end,
