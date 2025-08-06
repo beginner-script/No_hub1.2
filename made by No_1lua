@@ -128,7 +128,7 @@ Tab:CreateSlider({
    end,
 })
 
-local Button = mainTab:CreateButton({
+local Button = Tab:CreateButton({
    Name = "노클립",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/noclip/refs/heads/main/README.md"))()
