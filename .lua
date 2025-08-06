@@ -167,3 +167,10 @@ for _, v in getconnections(lplr.Idled) do
 end
    end,
 }) 
+
+Tab:CreateButton({
+   Name = "INF jump",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/INF-jump/refs/heads/main/.lua"))()
+   end,
+})
