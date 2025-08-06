@@ -110,6 +110,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_v
    end,
 }) 
 
+local mainTab = Window:CreateTab("맵", nil) -- title, Image
+local mainSection = mainTab:CreateSection("")
+
+local Button = mainTab:CreateButton({
+   Name = "skybox(No_1)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/skybox/refs/heads/main/.lua"))()
+   end,
+}) 
+
+
 local Tab = Window:CreateTab("플레이어", 4483362458)
 local Section = Tab:CreateSection("이동 속도")
 
