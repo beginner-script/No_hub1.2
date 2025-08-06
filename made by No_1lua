@@ -115,7 +115,7 @@ local Section = Tab:CreateSection("이동 속도")
 
 Tab:CreateSlider({
    Name = "속도",
-   Range = {16, 100}, -- 최소값 16(기본), 최대값 100
+   Range = {16, 100},
    Increment = 1,
    Suffix = "속도",
    CurrentValue = 16,
@@ -125,6 +125,22 @@ Tab:CreateSlider({
       local character = player.Character or player.CharacterAdded:Wait()
       local humanoid = character:WaitForChild("Humanoid")
       humanoid.WalkSpeed = Value
+   end,
+})
+
+Tab:CreateSlider({
+   Name = "점프파워",
+   Range = {50, 500}, 
+   Increment = 10,
+   Suffix = "점프력",
+   CurrentValue = 50,
+   Flag = "JumpSlider",
+   Callback = function(Value)
+      local player = game.Players.LocalPlayer
+      local character = player.Character or player.CharacterAdded:Wait()
+      local humanoid = character:WaitForChild("Humanoid")
+      humanoid.UseJumpPower = true
+      humanoid.JumpPower = Value
    end,
 })
 
