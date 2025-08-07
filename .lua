@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "No_hub",
+   Name = "No_hub 1.3",
    Icon = 122995502630053, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "discord: m0nky.1030",
    LoadingSubtitle = "로딩중...!",
