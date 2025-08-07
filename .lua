@@ -192,3 +192,10 @@ Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/click-tp/refs/heads/main/.lua%20made%20by%20No_1"))()
    end,
 })
+
+Tab:CreateButton({
+   Name = "fly (No_1)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/fly/refs/heads/main/.lua"))()
+   end,
+})
