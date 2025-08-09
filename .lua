@@ -101,6 +101,13 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
 }) 
 
 local Button = mainTab:CreateButton({
+   Name = "aimbot(No_1)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/aimbot/refs/heads/main/.lua"))()
+   end,
+}) 
+
+local Button = mainTab:CreateButton({
    Name = "죽은곳에서 부활(No_1)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/rewpawn/refs/heads/main/.lua"))()  
