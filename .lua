@@ -100,6 +100,13 @@ loadstring(game:HttpGet("https://mystb.in/raw/a3c36cea74e993c872/1"))()
    end,
 }) 
 
+local Button = mainTab:CreateButton({
+   Name = "죽은곳에서 부활",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/rewpawn/refs/heads/main/.lua"))()  
+   end,
+}) 
+
 local mainTab = Window:CreateTab("가강전", 122188029282264) -- title, Image
 local mainSection = mainTab:CreateSection("")
 
