@@ -124,10 +124,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/click
 local Button = mainTab:CreateButton({
    Name = "왔다 갔다 반복 (No_1)",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/tweentp-/refs/heads/main/.lua"))()   
+loadstring(game:HttpGet("https://mystb.in/raw/6e6eeb04932b253609/1"))() 
    end,
 }) 
 
+local Button = mainTab:CreateButton({
+   Name = "대쉬 q (No_1)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/tweentp-/refs/heads/main/.lua"))()   
+   end,
+}) 
 
 local mainTab = Window:CreateTab("가강전", 122188029282264) -- title, Image
 local mainSection = mainTab:CreateSection("")
