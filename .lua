@@ -7,7 +7,7 @@ image.Parent = gui
 image.Size = UDim2.new(1,0,1,0)
 image.Position = UDim2.new(0,0,0,0)
 image.BackgroundTransparency = 1
-image.Image = "rbxassetid://72987249383416"
+image.Image = "rbxassetid://105852879508635"
 image.ImageTransparency = 1
 
 local fadeTime = 1
