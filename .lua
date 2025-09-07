@@ -7,7 +7,7 @@ image.Parent = gui
 image.Size = UDim2.new(1,0,1,0)
 image.Position = UDim2.new(0,0,0,0)
 image.BackgroundTransparency = 1
-image.Image = "rbxassetid://105852879508635"
+image.Image = "rbxassetid://72987249383416"
 image.ImageTransparency = 1
 
 local fadeTime = 1
@@ -90,6 +90,60 @@ scriptsTab:CreateButton({ Name = "clickfling(No_1)", Callback = function()
 end})
 scriptsTab:CreateButton({ Name = "대쉬 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://mystb.in/raw/6e6eeb04932b253609/1"))() 
-end})롤타 2", Callback = function()
+end})
+scriptsTab:CreateButton({ Name = "자동 테러 (No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/tweentp-/refs/heads/main/.lua"))()   
+end})
+
+local battleTab = Window:CreateTab("가강전", 122188029282264)
+battleTab:CreateSection("")
+battleTab:CreateButton({ Name = "버튼(E)누르면 공허(No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_voidscript1.0/refs/heads/main/Made.by.No_1"))()
+end})
+
+local mapTab = Window:CreateTab("맵", nil)
+mapTab:CreateSection("")
+mapTab:CreateButton({ Name = "skybox(No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/skybox/refs/heads/main/.lua"))()
+end})
+
+local playerTab = Window:CreateTab("플레이어", 4483362458)
+local Section = playerTab:CreateSection("이동 속도")
+playerTab:CreateSlider({ Name = "속도 (No_1) ", Range = {16,100}, Increment = 1, Suffix = "속도", CurrentValue = 16, Flag = "SpeedSlider", Callback = function(Value)
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    humanoid.WalkSpeed = Value
+end})
+playerTab:CreateSlider({ Name = "점프파워 (No_1) ", Range = {50,500}, Increment = 10, Suffix = "점프력", CurrentValue = 50, Flag = "JumpSlider", Callback = function(Value)
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    humanoid.UseJumpPower = true
+    humanoid.JumpPower = Value
+end})
+playerTab:CreateButton({ Name = "노클립 (No_1) ", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/noclip/refs/heads/main/README.md"))()
+end})
+playerTab:CreateButton({ Name = "anti afk (No_1)", Callback = function()
+    local Players = game:GetService("Players")
+    local lplr = Players.LocalPlayer
+    while not lplr do wait() lplr = Players.LocalPlayer end
+    for _, v in getconnections(lplr.Idled) do v:Disable() end
+end})
+playerTab:CreateButton({ Name = "INF jump", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/INF-jump/refs/heads/main/.lua"))()
+end})
+playerTab:CreateButton({ Name = "클릭 텔포트 (No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/click-tp/refs/heads/main/.lua%20made%20by%20No_1"))()
+end})
+playerTab:CreateButton({ Name = "fly (No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/fly/refs/heads/main/.lua"))()
+end})
+
+local towerTab = Window:CreateTab("타워 테러", nil)
+towerTab:CreateSection("")
+towerTab:CreateButton({ Name = "트롤타 2", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll-by_No_1/refs/heads/main/.lua"))()
+end})
+towerTab:CreateButton({ Name = "빡종타 2", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll.scipt-by_No_1/refs/heads/main/%EB%B9%A1%EC%A2%85%ED%83%802.lua"))()
 end})
