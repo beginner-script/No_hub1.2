@@ -91,7 +91,7 @@ end})
 scriptsTab:CreateButton({ Name = "대쉬 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://mystb.in/raw/6e6eeb04932b253609/1"))() 
 end})
-scriptsTab:CreateButton({ Name = "자동 테러 (No_1)", Callback = function()
+towerTab:CreateButton({ Name = "자동 테러 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/tweentp-/refs/heads/main/.lua"))()   
 end})
 
