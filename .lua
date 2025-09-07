@@ -141,9 +141,16 @@ towerTab:CreateSection("")
 towerTab:CreateButton({ Name = "트롤타 2", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll-by_No_1/refs/heads/main/.lua"))()
 end})
+
+towerTab:CreateButton({ Name = "트롤타 3", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll.by_No_1/refs/heads/main/.lua"))()   
+end})
+
 towerTab:CreateButton({ Name = "빡종타 2", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll.scipt-by_No_1/refs/heads/main/%EB%B9%A1%EC%A2%85%ED%83%802.lua"))()
 end})
+
 towerTab:CreateButton({ Name = "자동 테러 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/tweentp-/refs/heads/main/.lua"))()   
 end})
+
