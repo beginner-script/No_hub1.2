@@ -51,12 +51,6 @@ mainTab:CreateButton({ Name = "infinity yield", Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end})
 
-local motionTab = Window:CreateTab("모션핵", nil)
-motionTab:CreateSection("")
-motionTab:CreateButton({ Name = "마히토(사이타마) (출처:모름)", Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
-end})
-
 local arsenalTab = Window:CreateTab("아스널", 131569011870687)
 arsenalTab:CreateSection("")
 arsenalTab:CreateButton({ Name = "thunder hub", Callback = function()
@@ -96,6 +90,14 @@ local battleTab = Window:CreateTab("가강전", 122188029282264)
 battleTab:CreateSection("")
 battleTab:CreateButton({ Name = "버튼(E)누르면 공허(No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_voidscript1.0/refs/heads/main/Made.by.No_1"))()
+end})
+
+battleTab:CreateButton({ Name = "노짱 모션(No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/TSB_Nozzang-motion.Madeby.No_1/refs/heads/main/.lua"))()
+end})
+
+battleTab:CreateButton({ Name = "마히토(사이타마) (출처:모름)", Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
 end})
 
 local mapTab = Window:CreateTab("맵", nil)
@@ -138,15 +140,15 @@ end})
 
 local towerTab = Window:CreateTab("타워 테러", nil)
 towerTab:CreateSection("")
-towerTab:CreateButton({ Name = "트롤타 2", Callback = function()
+towerTab:CreateButton({ Name = "트롤타 2 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll-by_No_1/refs/heads/main/.lua"))()
 end})
 
-towerTab:CreateButton({ Name = "트롤타 3", Callback = function()
+towerTab:CreateButton({ Name = "트롤타 3 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll.by_No_1/refs/heads/main/.lua"))()   
 end})
 
-towerTab:CreateButton({ Name = "빡종타 2", Callback = function()
+towerTab:CreateButton({ Name = "빡종타 2 (No_1)", Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/towe.troll.scipt-by_No_1/refs/heads/main/%EB%B9%A1%EC%A2%85%ED%83%802.lua"))()
 end})
 
