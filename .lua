@@ -100,6 +100,10 @@ battleTab:CreateButton({ Name = "마히토(사이타마) (출처:모름)", Callb
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
 end})
 
+battleTab:CreateButton({ Name = "무한 스레기통 (No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/Tsb.infinity.trashcan/refs/heads/main/.lua"))()
+end})
+
 local mapTab = Window:CreateTab("맵", nil)
 mapTab:CreateSection("")
 mapTab:CreateButton({ Name = "skybox(No_1)", Callback = function()
