@@ -104,6 +104,10 @@ battleTab:CreateButton({ Name = "무한 스레기통 (No_1)", Callback = functio
     loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/Tsb.infinity.trashcan/refs/heads/main/.lua"))()
 end})
 
+battleTab:CreateButton({ Name = "킬 늘리기 (No_1)", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/beginner-script/Tsb-99999kills-FE-/refs/heads/main/.lua"))()
+end})
+
 local mapTab = Window:CreateTab("맵", nil)
 mapTab:CreateSection("")
 mapTab:CreateButton({ Name = "skybox(No_1)", Callback = function()
